@@ -1,6 +1,8 @@
 import jwt from "jsonwebtoken";
 import { 
-    createProduct, 
+    createProduct,
+    updateProduct,
+    deleteProduct, 
     createCart,
     getProducts,
     getProductById,
@@ -17,7 +19,9 @@ export function shoppyRoutes(app) {
     app.get("/products/:id", getProductById),
     app.get("/cartitems", verifyToken, showCartItems),
     app.post("/product", createProduct),
+    app.put("/product/:id", verifyToken, updateProduct),
+    app.delete("/product/:id", verifyToken, deleteProduct),
     app.post("/cart", verifyToken, createCart),
     app.put("/cart", verifyToken, updateQuantity),
-    app.delete("/cart/:id", removeCartProduct)
+    app.delete("/cart/:id", verifyToken, removeCartProduct)
 }

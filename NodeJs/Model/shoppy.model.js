@@ -27,22 +27,5 @@ const ProductSchema = new Schema({
 })
 
 
-
-const cartSchema = new Schema({
-
-    product_id: {
-        type: String,
-        unique: true,
-        required: true
-    },
-
-    quantities: {
-        type: Number,
-        required: true
-    }
-
-})
-
-
-export const productModel = mongoose.model("products", ProductSchema);
-export const cartModel = mongoose.model("cart", cartSchema);
+const productModel = mongoose.model("products", ProductSchema);
+export default productModel;

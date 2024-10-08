@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { cartModel } from '../Model/shoppy.model.js';
+import cartModel from '../Model/cart.model.js';
 
 
 export function verifyToken(req, res, next) {

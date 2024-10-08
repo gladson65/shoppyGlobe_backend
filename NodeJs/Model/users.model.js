@@ -7,19 +7,24 @@ const userSchema = new Schema({
 
     fullName: {
         type: String,
-        required: true
+        uppercase: true,
+        required: true,
     },
 
     email: {
         type: String,
-        required: true
+        unique: true,
+        required: true,
+        lowercase: true,
     },
 
     password: {
         type: String,
-        required: true
+        required: true,
     }
 })
+
+
 
 const userModel = mongoose.model("user", userSchema);
 

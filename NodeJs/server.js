@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import { shoppyRoutes } from "./Route/shoppy.routes.js";
 import { userRoutes } from "./Route/user.routes.js";
-import { checkData } from "./Controller/shoppy.controllers.js";
+
 
 
 
