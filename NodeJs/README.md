@@ -16,4 +16,4 @@
     - "/cart" (Put request to update cart's product quantity)
     - "/cart/:id" (Delete request to delete a product from the cart)
 
-[GitHub]:(https://github.com/gladson65/shoppyGlobe_backend/tree/main/NodeJs)
+[GitHub](https://github.com/gladson65/shoppyGlobe_backend/tree/main/NodeJs)
